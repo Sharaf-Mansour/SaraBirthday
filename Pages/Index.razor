@@ -1,7 +1,16 @@
 @page "/"
 <Cake />
 <div style="text-align: center">
-    <h1>21 YEARS</h1>
+    <h1>
+        Sara's birthday is on @SaraBirthday.ToLongDateString()
+    </h1>
+    <h1>
+        Sara is
+        @((int) (DateTime.Now - SaraBirthday).TotalDays) Days Old
+    </h1>
+    <h1>
+        @((int) (NextBirthday - DateTime.Now).TotalDays) Days left for her next Birthday
+    </h1>
 </div>
 <Balloons />
 <br />
@@ -13,4 +22,8 @@
 <br />
 <br />
 <SaraPic />
+@code {
+    DateTime SaraBirthday = new DateTime(2001, 03, 27);
+    DateTime NextBirthday = new DateTime(2023, 03, 27);
 
+}
