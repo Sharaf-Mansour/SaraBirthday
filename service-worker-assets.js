@@ -13,7 +13,7 @@
       "url": "_framework\/dotnet.wasm"
     },
     {
-      "hash": "sha256-spVmhYLdkCNjhTKseTh3NZK0f4bJ3+Eod2qnoPu570Y=",
+      "hash": "sha256-B\/zyofGEHCPmQR29uIqn4pVmw7drqRfxujqNW1ZxxZ0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -73,7 +73,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-reqIEcURge3jdR8yjGppEo564TzwIkN9+6NK6\/japrI=",
+      "hash": "sha256-2jHpBl+rqHEKpNPe9xcVnfBrzJXLq37umYvcSh+Sq6Q=",
       "url": "_framework\/SaraBirthday.dll"
     },
     {
@@ -241,5 +241,5 @@
       "url": "sara-removebg-preview.png"
     }
   ],
-  "version": "PP1k8LZo"
+  "version": "8wZDnsFO"
 };
