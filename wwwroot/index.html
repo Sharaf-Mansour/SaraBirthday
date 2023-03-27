@@ -13,6 +13,13 @@
     <link href="manifest..webmanifest" rel="manifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background-color: transparent; /* set the background to transparent */
+         }
+    </style>
 </head>
 
 <body>
@@ -25,6 +32,7 @@
             </div>
         </div>
     </div>
+
     <script type="text/javascript" integrity="">
         (function (l) {
             if (l.search) {
@@ -43,6 +51,46 @@
             }
         }(window.location))
     </script>
+
+    <script>
+        // Set canvas width and height
+        
+        function CreatCanvas() {
+        var canvas = document.getElementById("myCanvas");
+        canvas.width = 300;
+        canvas.height = 300;
+
+        // Get canvas context
+        var ctx = canvas.getContext("2d");
+
+        // Draw heart shape
+        ctx.beginPath();
+        ctx.moveTo(150, 75);
+        ctx.bezierCurveTo(150, 37, 126, 0, 75, 0);
+        ctx.bezierCurveTo(0, 0, 0, 75, 0, 75);
+        ctx.bezierCurveTo(0, 125, 150, 200, 150, 275);
+        ctx.bezierCurveTo(150, 200, 300, 125, 300, 75);
+        ctx.bezierCurveTo(300, 75, 300, 0, 225, 0);
+        ctx.bezierCurveTo(174, 0, 150, 37, 150, 75);
+        ctx.fillStyle = "#FF69B4";
+        ctx.fill();
+
+        // Add text
+        ctx.font = "30px Arial";
+            ctx.textAlign = "center";
+            ctx.fillStyle = "white";
+
+        ctx.fillText("♥ Sara ♥", 150, 115);
+
+        // Add birthday message
+        ctx.font = "20px Arial";
+        ctx.fillStyle = "black";
+            ctx.fillText("♥ Happy Birthday ♥", 150, 140);
+
+        }
+        
+    </script>
+
     <div id="blazor-error-ui">
         An unhandled error has occurred.
         <a href="" class="reload">Reload</a>
